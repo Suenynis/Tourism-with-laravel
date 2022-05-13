@@ -29,7 +29,7 @@
             <form action="#"><input type="password" name= "login" placeholder="Пароль" class="input" required></form>
 
             <button class="btn"> Войти</button>
-            <a href = "registration.html">Вы еще не зарегистрировались?</a>
+            <a href = "registration">Вы еще не зарегистрировались?</a>
         </div>
 
     </div>
