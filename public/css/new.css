@@ -116,7 +116,11 @@ body {
   background: #cb2027;
   color: white;
 }
-
+.sdfg{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
 .btn-zayavka {
   position: absolute;
   width: 314px;
