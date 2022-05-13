@@ -17,7 +17,7 @@
 <div class="main_page">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href = "index">
+            <a class="navbar-brand" href = "index.html">
                 <img src="img/Logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +27,13 @@
             <div class = " collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active lang" aria-current="page" href="tours" key="tour">    Все туры</a>
+                        <a class="nav-link active lang" aria-current="page" href="tours.html" key="tour">    Все туры</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="comments" key="feedback">Отзывы</a>
+                        <a class="nav-link lang" href="comments.html" key="feedback">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="login" key="signin">Войти</a>
+                        <a class="nav-link lang" href="login.html" key="signin">Войти</a>
                     </li>
 
                     <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>

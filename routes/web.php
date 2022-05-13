@@ -23,5 +23,4 @@ Route::get('/admin_Comments', 'App\Http\Controllers\PagesController@adminComment
 Route::get('/admin_Tours','App\Http\Controllers\PagesController@adminEdit');
 Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex');
 Route::get('/admin_Users', 'App\Http\Controllers\PagesController@adminUsers');
-Route::get('/check', 'App\Http\Controllers\PagesController@check');
 

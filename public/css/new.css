@@ -15,7 +15,6 @@ body {
   left: 200px;
 }
 
-
 .text-button {
   text-decoration: none;
   color: #fff;
@@ -112,12 +111,6 @@ body {
 .fa-pinterest {
   background: #cb2027;
   color: white;
-}
-
-.check{
-  position: absolute;
-  left: 130px;
-  top: 300px;
 }
 
 .btn-zayavka {
