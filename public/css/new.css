@@ -15,10 +15,6 @@ body {
   left: 200px;
 }
 
-.men{
-    width: 480px;
-}
-
 .text-button {
   text-decoration: none;
   color: #fff;
@@ -116,11 +112,7 @@ body {
   background: #cb2027;
   color: white;
 }
-.sdfg{
-  position: absolute;
-  top: 100px;
-  left: 200px;
-}
+
 .btn-zayavka {
   position: absolute;
   width: 314px;

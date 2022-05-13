@@ -14,23 +14,23 @@
 
 <body>
 <div class = "navbar-up">
-    <a  class = "admin-panel-text " href = "admin_Main">ADMIN PANEL</a>
+    <a  class = "admin-panel-text ">ADMIN PANEL</a>
 </div>
 <div class = "navbar navbar-expand-lg navbar-light " role="navigation">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link white-text active" aria-current="page" href="admin_Index">Control tours</a>
+                    <a class="nav-link white-text active" aria-current="page" href="#">Control tours</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link white-text" href="admin_Users">Users</a>
+                    <a class="nav-link white-text" href="#">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link white-text" href="admin_Comments">Control comments</a>
+                    <a class="nav-link white-text" href="#">Control comments</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link white-text" href="admin_Main">Control main page</a>
+                    <a class="nav-link white-text" href="#">Control main page</a>
                 </li>
                 <li class="nav-item">
                     <svg class = "log-out-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 416H96c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h64c17.67 0 32-14.33 32-32S177.7 32 160 32H96C42.98 32 0 74.98 0 128v256c0 53.02 42.98 96 96 96h64c17.67 0 32-14.33 32-32S177.7 416 160 416zM502.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L402.8 224H192C174.3 224 160 238.3 160 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C515.1 266.1 515.1 245.9 502.6 233.4z"/></svg>              </li>
@@ -49,7 +49,7 @@
             <p class="card-text">Garden View</p>
             <p class="card-text lang" key="nutrition"> Питание: AI все включено </p>
             <p class="card-text lang" key="toursists">Туристы: 2 взрослых</p>
-            <a href="admin_Tours" class="card-text btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="#" class="card-text btn btn-primary align-self-center lang" key="more about">EDIT</a>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -60,7 +60,7 @@
             <p class="card-text">Garden View</p>
             <p class="card-text lang" kay="nutrition"> Питание: AI все включено </p>
             <p class="card-text lang" key="tourists">Туристы: 2 взрослых</p>
-            <a href="admin_Tours" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="#" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -71,7 +71,7 @@
             <p class="card-text">Garden View</p>
             <p class="card-text lang" key="nutrition"> Питание: AI все включено </p>
             <p class="card-text lang" key="tourists">Туристы: 2 взрослых</p>
-            <a href="admin_Tours" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="#" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -82,7 +82,7 @@
             <p class="card-text">Garden View</p>
             <p class="card-text lang" key="nutrition"> Питание: AI все включено </p>
             <p class="card-text lang" key="tourists">Туристы: 2 взрослых</p>
-            <a href="admin_Tours" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="#" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
         </div>
     </div>
 

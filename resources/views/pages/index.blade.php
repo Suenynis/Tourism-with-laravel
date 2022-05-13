@@ -29,7 +29,7 @@
             <div class = " collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active lang" aria-current="page" href="tours" key="tour">Все туры</a>
+                        <a class="nav-link active lang" aria-current="page" href="tours" key="tour">    Все туры</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link lang" href="comments" key="feedback">Отзывы</a>
