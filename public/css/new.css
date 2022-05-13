@@ -114,6 +114,12 @@ body {
   color: white;
 }
 
+.check{
+  position: absolute;
+  left: 130px;
+  top: 300px;
+}
+
 .btn-zayavka {
   position: absolute;
   width: 314px;
