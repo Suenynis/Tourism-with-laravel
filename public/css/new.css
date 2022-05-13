@@ -1,0 +1,326 @@
+.main_page {
+  position: relative;
+  display: block;
+  height: 100vh;
+  background-image: url(../img/imgonline-com-ua-Resize-AsWanOeh2kRO-1.jpg);
+  background-repeat: no-repeat;
+}
+body {
+  display: inline-block;
+}
+.imgi {
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 200px;
+}
+
+.text-button {
+  text-decoration: none;
+  color: #fff;
+  padding-top: 25px;
+}
+
+.nav-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 40px;
+  color: #743522;
+  text-align: center;
+  width: 100%;
+  margin: 0 30px;
+}
+.translate {
+  font-size: 15px;
+  background: transparent;
+  border: 0;
+  margin: 0 5px;
+  padding-right: 10px;
+  /*margin-left: 12px;
+  padding-top:15px;
+  */
+}
+
+.navbar-collapse {
+  padding: 0 250px;
+}
+
+.slogan {
+  font-family: Playfair Display;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2a3a58;
+  width: 800px;
+}
+.slogan-container {
+  padding: 100px;
+  padding-top: 0;
+}
+
+.main-slogan {
+  position: absolute;
+  left: 130px;
+  top: 170px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.btn-zayavka {
+  position: absolute;
+  width: 314px;
+  height: 74px;
+  left: 130px;
+  top: 565px;
+  background: #416c76;
+  color: white;
+  border-radius: 38px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.author {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 45px;
+  margin: 0;
+  /* or 150% */
+  color: #7e3d29;
+  width: 400px;
+}
+
+.tour-1 {
+  width: 400px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+
+  color: #2a3a58;
+}
+
+.text {
+  width: 400px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 33px;
+  text-decoration: none;
+  /* or 183% */
+
+  color: #55291b;
+}
+
+.btn2 {
+  border: 2px solid #416c76;
+  box-sizing: border-box;
+  border-radius: 38px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  background: white;
+  color: #416c76;
+
+  width: 250px;
+  height: 75px;
+  margin-top: 75px;
+}
+
+.mainp-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+.mainp-2-txt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  margin: 0 0 25px 25px;
+}
+
+.img-ozero {
+  height: 50%;
+  width: 40%;
+}
+
+footer {
+  padding: 90px 50vw;
+  background-color: rgba(221, 216, 216, 0.5);
+  position: relative;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.navbar-toggler-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.forman {
+  height: 100vh;
+  margin: 100px;
+  background: #ddd8d8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form7-text {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+
+  margin: 25px;
+}
+
+.form7-main {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin: 25px;
+}
+
+.btn-form {
+  width: 314px;
+  height: 74px;
+
+  background: #416c76;
+  border-radius: 38px;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.p-2 {
+  background-image: url(../img/background.png);
+  overflow: hidden;
+  width: 100vw;
+}
+
+.content-2 {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background: #ececec;
+  border-radius: 36px;
+  margin: 10px 15px;
+}
+
+.card-img-top {
+  border-radius: 36px;
+}
+
+.tours {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tours-heading {
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0em;
+  color: #2a3a58;
+}
+
+hr {
+  border: 4px solid #000000;
+}

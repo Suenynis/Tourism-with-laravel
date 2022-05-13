@@ -1,0 +1,165 @@
+.navbar-up{
+
+    position: relative;
+    width: 98%;
+    height: 80px;
+
+    background: #E0AFA0;
+    border-radius: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+
+.admin-panel-text{
+width: 419px;
+height: 25px;
+text-decoration: none;
+font-family: 'Jua';
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 50px;
+color: #FFFFFF;
+}
+
+.navbar{
+    background: #E0AFA0;
+    height: 70px;
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-family: 'Jua';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.white-text{
+    color: #FFFFFF !important;
+}
+
+.nav-item{
+    margin: 0 70px;
+}
+
+.log-out-svg{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top:10px;
+    filter: invert(100%) sepia(0%) saturate(7475%) hue-rotate(140deg) brightness(108%) contrast(102%);
+}
+
+.content-2{
+    width:1500px;
+}
+
+.edit-tours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.edit-box{
+width: 500px;
+height: 350px;
+
+background: #ECECEC;
+border-radius: 30px;
+margin-right: 100px;
+display: flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+    background: #ECECEC;
+  border-radius: 36px;
+   margin: 10px 15px;
+  }
+  .card-img-top{
+    border-radius: 36px;
+
+  }
+
+  .bb{
+      margin: 10px 0 0 150px;
+  }
+
+
+  .mytable{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .user-word{
+    height: 43px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #000000;
+
+  }
+
+  .line1{
+    width: 800px;
+    height: 40px;
+   /* display: flex;
+    justify-content: space-between; */
+
+    background: #CCCCCC;
+  }
+  .line2{
+    width: 800px;
+    height: 40px;
+   /* display: flex;
+    justify-content: space-between; */
+
+    background: #ECECEC;
+  }
+  .mline{
+    width: 800px;
+    height: 40px;
+    /*display: flex;
+    justify-content: space-between; */
+
+  }
+  .m-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  }
+
+  .accept-box{
+    width: 60px;
+    height: 30px;
+
+    background: #51FF77;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reject-box{
+    width: 60px;
+    height: 30px;
+
+    background: #FF5151;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+

@@ -1,0 +1,102 @@
+    
+      .block {
+          
+        width: 800px;
+        height: 75px;
+        transform-origin: center;
+        transform: rotate(-30deg);
+        position: absolute;
+    }
+    
+    
+    .containerlil{ 
+                display:flex;
+                height: 130vh;
+                margin-top:50px;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                position: relative;
+            }
+    
+    .eyesContainer{
+                width: 150px;
+                height: 150px;
+                background-color:yellow;
+                display:grid;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 1fr 1fr;
+                border-radius: 50%;
+                position: absolute;
+            }
+    
+            .eye{
+                width: 50px;
+                height: 50px;
+                border-radius:50%;
+                background-color:white;
+                transform: rotate(var(--eyeAngle , 0deg));
+                
+            }
+    
+            .pupil{
+                width: 20px;
+                height: 20px;
+                border-radius:50%;
+                background-color:black;
+                position: relative;
+    
+                top:calc(50% - 10px);
+                left: 5px;
+            }
+    
+    
+    
+    .block:nth-child(2) {
+      transform: rotate(30deg);
+    }
+    .block:nth-child(3) {
+      transform: rotate(95deg);
+    }
+    .block:nth-child(4) {
+      transform: rotate(155deg);
+    }
+    .block:nth-child(5) {
+      transform: rotate(215deg);
+    }
+    
+    
+    .square {
+      background: yellow;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+     /*.picture-1{
+       
+       background-image: url("img/1.png");
+       transform :rotate(200deg);
+    
+    } 
+    .picture-2{
+          background-image: url("img/2.png");
+          transform :rotate(200deg);
+    }
+    .picture-3{
+             
+             background-image: url("img/3.png");
+    } */
+    
+    .smile_text{
+        font-size: 25px;
+        color: black;
+        font-family: 'Arial';
+        position: absolute;
+        top: 100%;
+        margin-left:80px;
+        width: 400px;
+    }
+    

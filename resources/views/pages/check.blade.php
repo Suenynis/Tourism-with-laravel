@@ -1,0 +1,3 @@
+
+@extends('inc.navbar')
+@endsection
