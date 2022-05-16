@@ -22,18 +22,24 @@
     <h2>Регистрация</h2>
 
     <div class="forms">
-        <form name='registration' action="register.php" method="post"  >
+        <form name='registration' action="{{route('register-user')}}" method="post">
+            @csrf
             <ul>
-                <li><input type="text" name="username" placeholder="ФИО" class="input"></li>
-
-                <li><input type="tel" name="number" placeholder="Телефон" class="input"></li>
-
+                <span class="text-danger">@error('name'){{$message}} @enderror</span>
+                @if(Session::has('success'))
+                    <div class="alert alert-success">{{Session::get('success')}}</div>
+                @endif
+                @if(Session::has('fail'))
+                    <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                @endif
+                <li><input type="text" name="name" placeholder="ФИО" class="input"></li>
+                <span class="text-danger">@error('phone'){{$message}} @enderror</span>
+                <li><input type="text" name="phone" placeholder="Телефон" class="input"></li>
+                <span class="text-danger">@error('email'){{$message}} @enderror</span>
                 <li><input type="email" name="email" placeholder="Email" class="input"></li>
-
+                <span class="text-danger">@error('password'){{$message}} @enderror</span>
                 <li><input type="password" name="password" placeholder="Пароль" class="input"></li>
-
                 <li><input type="password" name="password1" placeholder="Подтвердите пароль" class="input"></li>
-
                 <li><div class="btn"><input type="submit" name="submit" value="Зарегистрироваться" style="background-color: #FFD429; border: 0;" /></div></li>
             </ul>
 

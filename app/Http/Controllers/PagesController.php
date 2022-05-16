@@ -15,7 +15,7 @@ class PagesController extends Controller
     public function login():string{
         return view('pages.login');
     }
-    public function registration(): string{
+    public function registration(){
         return view('pages.registration');
     }
     public function tours(): string{
