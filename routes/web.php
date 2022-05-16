@@ -23,9 +23,9 @@ Route::get('/admin_Comments', 'App\Http\Controllers\PagesController@adminComment
 Route::get('/admin_Tours','App\Http\Controllers\PagesController@adminEdit');
 Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex');
 Route::get('/admin_Users', 'App\Http\Controllers\PagesController@adminUsers');
-//Route::get('/registration', [\App\Http\Controllers\UserController::class,'create']);
-
-Route::name('user.')->group(function (){
+Route::get('/registration',[\App\Http\Controllers\RegisterController::class,'show'])->name('savedata');
+Route::post('/registration_get',[\App\Http\Controllers\RegisterController::class,'savedata'])->name('registration_get');
+/*Route::name('user.')->group(function (){
     Route::view('/private' ,'private') -> middleware('auth')->name('private');
 
 
@@ -35,6 +35,7 @@ Route::name('user.')->group(function (){
         }
         return view('pages.login');
     })->name('login');
+    Route::post('/login',[\App\Http\Controllers\LoginController::class,'login']);
 
 
 
@@ -45,10 +46,10 @@ Route::name('user.')->group(function (){
         return view('pages.registration');
     })->name('registration');
 
-    Route::post('/registration',[\App\Http\Controllers\RegisterController::class,'store']);
+    Route::post('/registration',[\App\Http\Controllers\RegisterController::class,'savedata'])->name('registr');
 
-   // Route::post('/login')
-});
+    Route::post('/login',[\App\Http\Controllers\LoginController::class,'login']);
+}); */
 
 
 

@@ -10,9 +10,11 @@ use Illuminate\Validation\Rule;
 
 class RegisterController extends Controller
 {
+    public  function show(){
+        return view('pages.registration');
+    }
 
-
-    public function store(Request $request)
+    public function savedata(Request $request)
     {
         if (Auth::check()) {
             return redirect(route('user.private'));
@@ -25,9 +27,14 @@ class RegisterController extends Controller
         ]);
 
 
-        $formFields['password'] = bcrypt($formFields['password']);
+        //$formFields['password'] = bcrypt($formFields['password']);
 
-        $user = User::create($formFields);
+        $user = User::create([
+         'name' => $formFields['name'],
+            'phone' => $formFields['phone'],
+            'email' => $formFields['email'],
+            'password' => $formFields['password']
+        ]);
 
 
         if ($user) {

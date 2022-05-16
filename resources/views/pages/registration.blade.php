@@ -19,12 +19,12 @@
     <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </head>
 
-<body onload="document.registration.userid.focus();">
+<body> <!-- onload="document.registration.userid.focus(); -->
 <div class="container">
     <h2>Регистрация</h2>
 
     <div class="forms">
-        <form name='registration' action="{{route('user.registration')}}" method="POST"  >
+        <form name='registration' action="{{route('registration_get')}}" method="POST"  >
             @csrf
             <ul>
                 <li><input type="text" name="username" placeholder="ФИО" class="input"></li>
