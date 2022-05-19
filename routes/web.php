@@ -15,6 +15,7 @@ use App\Http\Controllers\CustomAuthController;
 */
 
 Route::get('/index', 'App\Http\Controllers\PagesController@index');
+Route::get('/', 'App\Http\Controllers\PagesController@index');
 Route::get('/comments', 'App\Http\Controllers\PagesController@comments');
 Route::get('/login', 'App\Http\Controllers\PagesController@login');
 Route::get('/registration', 'App\Http\Controllers\PagesController@registration');
@@ -26,4 +27,5 @@ Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex');
 Route::get('/admin_Users', 'App\Http\Controllers\PagesController@adminUsers');
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
+Route::get('/dashboard',CustomAuthController::class,'dashboard');
 

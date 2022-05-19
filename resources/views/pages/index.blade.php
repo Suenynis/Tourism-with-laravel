@@ -19,7 +19,7 @@
 <div class = "main_page container-fluid">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href = "index">
+            <a class="navbar-brand" href = "/">
                 <img  src="img/Logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,11 @@
                         <a class="nav-link lang"  key="contact" href="#so-net" >Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="login" key="signin" >Войти</a>
+                        @if(Session::has('loginId'))
+                            <a class="nav-link lang" href="login" key="signin" >{{$data->email}}</a>
+                        @else
+                            <a class="nav-link lang" href="login" key="signin" >Войти</a>
+                        @endif
                     </li>
                     <!--
                     <li class="header-item-lang-en"><button id="en" class="translate"><img src="./img/flagofeng.png" alt="flagofeng" width="35px" height="25px"></button></li>

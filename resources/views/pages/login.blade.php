@@ -25,14 +25,20 @@
         <h2 >Вход в учетную запись</h2>
         <div class="forms">
             <form name="login" action="{{route('login-user')}}" method="post" >
+                @if(Session::has('success'))
+                    <div class="alert alert-success">{{Session::get('success')}}</div>
+                @endif
+                @if(Session::has('fail'))
+                    <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                @endif
                 @csrf
                 <ul class="login">
                     <span class="text-danger">@error('email'){{$message}} @enderror</span>
-                    <li><input type="email" name="email" placeholder="Email" class="input"></li>
+                    <li><input type="email" name="email" placeholder="Email" class="input" value = "{{old('email')}}"></li>
                     <span class="text-danger">@error('password'){{$message}} @enderror</span>
                     <li><input type="password" name="password" placeholder="Пароль" class="input"></li>
                     <li><div class="btn"><input type="submit" name="submit" value="Войти" style="background-color: #FFD429; border: 0;" /></div></li>
-                    <li><a href = "registration.html">Вы еще не зарегистрировались?</a></li>
+                    <li><a href = "registration">Вы еще не зарегистрировались?</a></li>
                 </ul>
             </form>
         </div>
