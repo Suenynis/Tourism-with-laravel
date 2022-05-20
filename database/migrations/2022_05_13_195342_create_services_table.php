@@ -17,7 +17,7 @@ class CreateServicesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('tags');
-            $table->string('author');
+            $table->string('sphere');
 
 
         });
