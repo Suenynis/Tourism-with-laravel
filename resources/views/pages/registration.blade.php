@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- added Crf token -->
+    <meta name = "csrf-token" content="{{ csrf_token() }}">
     <title>Travel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{config('app.name', 'webBackend')}}</title>
@@ -17,22 +19,27 @@
     <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </head>
 
-<body onload="document.registration.userid.focus();">
+<body> <!-- onload="document.registration.userid.focus(); -->
 <div class="container">
     <h2>Регистрация</h2>
 
     <div class="forms">
-        <form name='registration' action="register.php" method="post"  >
+        <form name='registration' action="{{route('registration_get')}}" method="POST"  >
+            @csrf
             <ul>
                 <li><input type="text" name="username" placeholder="ФИО" class="input"></li>
 
                 <li><input type="tel" name="number" placeholder="Телефон" class="input"></li>
 
                 <li><input type="email" name="email" placeholder="Email" class="input"></li>
+                @error('email')
+                <div class = "alert alert-danger">{{ $message }}</div>
+                @enderror
 
                 <li><input type="password" name="password" placeholder="Пароль" class="input"></li>
-
-                <li><input type="password" name="password1" placeholder="Подтвердите пароль" class="input"></li>
+                @error('password')
+                <div class = "alert alert-danger">{{ $message }}</div>
+                @enderror
 
                 <li><div class="btn"><input type="submit" name="submit" value="Зарегистрироваться" style="background-color: #FFD429; border: 0;" /></div></li>
             </ul>
@@ -43,7 +50,7 @@
 
 </div >
 
-<script src="js/registration_jspart.js"></script>
+<!-- <script src="js/registration_jspart.js"></script> -->
 
 </body>
 </html>
