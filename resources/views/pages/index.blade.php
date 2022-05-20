@@ -39,7 +39,6 @@
                     </li>
                     <li class="nav-item">
                         @if(Session::has('loginId'))
-                            <a class="nav-link lang" href="login" key="signin" >{{$data->email}}</a>
                         @else
                             <a class="nav-link lang" href="login" key="signin" >Войти</a>
                         @endif
