@@ -27,5 +27,12 @@ Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex');
 Route::get('/admin_Users', 'App\Http\Controllers\PagesController@adminUsers');
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
+Route::get('/logout', [CustomAuthController::class, 'logout']);
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::get('test', function (){
+        return view('pages.adminMain');
+    })->name('test');
+});
+
 
 

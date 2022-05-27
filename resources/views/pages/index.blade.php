@@ -39,10 +39,23 @@
                     </li>
                     <li class="nav-item">
                         @if(Session::has('loginId'))
+                            <div class="lang dropdown">
+                                <a class="nav-link lang btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{$user->name}}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="logout">Logout</a></li>
+                                    @if($user->hasRole('admin'))
+                                    <li><a class="dropdown-item" href="admin_Main">Admin Main page</a></li>
+                                    @endif
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                    </li>
                         @else
                             <a class="nav-link lang" href="login" key="signin" >Войти</a>
+                        </li>
                         @endif
-                    </li>
                     <!--
                     <li class="header-item-lang-en"><button id="en" class="translate"><img src="./img/flagofeng.png" alt="flagofeng" width="35px" height="25px"></button></li>
                     <li class="header-item-lang-ru"><button id="ru" class="translate"><img src="./img/flagofrus.png" alt="flagofrus" width="35px" height="25px"></button></li>

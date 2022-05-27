@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Testing\Fluent\Concerns\Has;
-use MongoDB\Driver\Session;
+//use MongoDB\Driver\Session;
+use Session;
+use Auth;
 
 class CustomAuthController extends Controller
 {
@@ -28,6 +30,7 @@ class CustomAuthController extends Controller
         $user -> phone = $request -> phone;
         $user -> email = $request -> email;
         $user -> password = Hash::make($request -> password);
+        $user->assignRole('user');
         $res = $user->save();
         if($res){
             return back()->with('success' ,'You have registred successfully');
@@ -46,7 +49,8 @@ class CustomAuthController extends Controller
         if($user){
            if(Hash::check($request->password,$user ->password)){
                $request->session()->put('loginId', $user->id);
-               return redirect('');
+               //return view('pages.adminMain', compact('user'));
+               return view('pages.index',compact('user'));
            }
             return back()->with('fail','The password is not correct');
         }
@@ -62,5 +66,14 @@ class CustomAuthController extends Controller
 
         }
         return view('/',compact('data'));
+    }
+
+    public function logout(){
+         Session::flush();
+
+        \Auth::logout();
+
+        return redirect('login');
+
     }
 }
