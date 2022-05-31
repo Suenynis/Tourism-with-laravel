@@ -36,15 +36,15 @@
                         <a class="nav-link lang" href="login" key="signin">Войти</a>
                     </li>
 
-                    <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
-                    <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate">RUS</button></li>
+
+
                 </ul>
             </div>
 
         </div>
     </nav>
     <div class="comment-form">
-        <form>
+        <form method="post">
             <div class="comment-block">
                 <img class = "comment-block-img" src="img/person-comment.png" >
                 <div class="comment-text-box">
@@ -69,8 +69,9 @@
                     <a class = "comment-text lang" key="comment4">Всё отлично! Ответственные за свои дела. Пошли с хорошей компанией. Нам все понравилось!                </a>
                 </div>
             </div>
-            <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
-            <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate">RUS</button></li>
+            <
+            <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate"></button></li>
+            <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate"></button></li>
                 <div class="area">
                 <textarea name="comment" cols="70" rows="3"></textarea></p>
                  <p><input type="submit" value="Отправить">
