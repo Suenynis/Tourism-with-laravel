@@ -93,7 +93,23 @@ echo "The current temperature in Turkistan is ". $temperature_in_celsius2. " Cel
 echo "<img src='http://openweathermap.org/img/wn/".$temperature_current_weather_icon2."@2x.png' />"
 ?>
 
+<?php
+$city_name3='Burabay';
+$api_key3='5757b2dd818d33ce0b08cc1d138b1f5a';
+$api_url3='https://api.openweathermap.org/data/2.5/weather?q='.$city_name3.'&appid='.$api_key3;
 
+$weather_data3=json_decode( file_get_contents($api_url3),true);
+
+$temperature3=$weather_data3['main']['temp'];
+$temperature_in_celsius3=round($temperature3-273.15);
+$temperature_current_weather3=$weather_data3['weather'][0]['main'];
+$temperature_current_weather_description3=$weather_data3['weather'][0]['description'];
+$temperature_current_weather_icon3=$weather_data3['weather'][0]['icon'];
+
+echo "The current temperature in Burabay is ". $temperature_in_celsius3. " Celsius.";
+
+echo "<img src='http://openweathermap.org/img/wn/".$temperature_current_weather_icon."@2x.png' />"
+?>
 
 <?php
 $city_name1='Aktau';
