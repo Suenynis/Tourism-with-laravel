@@ -25,10 +25,9 @@ Route::get('/admin_Main','App\Http\Controllers\PagesController@adminMain')->midd
 Route::get('/admin_Comments', 'App\Http\Controllers\PagesController@adminComments')->middleware('role:admin');
 Route::get('/admin_Tours','App\Http\Controllers\PagesController@adminEdit')->middleware('role:admin');
 Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex')->middleware('role:admin');
-Route::get('/admin_Users', 'App\Http\Controllers\PagesController@adminUsers')->middleware('role:admin')->name('control-users');
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
 Route::get('/logout', [CustomAuthController::class, 'logout']);
-Route::get('/test',[User_for_Admin_Controller::class, 'show']);
+Route::get('/admin_Users',[User_for_Admin_Controller::class, 'show'])->middleware('role:admin')->name('control-users');;
 
 
