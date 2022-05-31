@@ -76,6 +76,26 @@
 
 ?>
 <?php
+$city_name2='Turkistan';
+$api_key2='5757b2dd818d33ce0b08cc1d138b1f5a';
+$api_url2='https://api.openweathermap.org/data/2.5/weather?q='.$city_name2.'&appid='.$api_key2;
+
+$weather_data2=json_decode( file_get_contents($api_url2),true);
+
+$temperature2=$weather_data2['main']['temp'];
+$temperature_in_celsius2=round($temperature2-273.15);
+$temperature_current_weather2=$weather_data2['weather'][0]['main'];
+$temperature_current_weather_description2=$weather_data2['weather'][0]['description'];
+$temperature_current_weather_icon2=$weather_data2['weather'][0]['icon'];
+
+echo "The current temperature in Aktau is ". $temperature_in_celsius2. " Celsius.";
+
+echo "<img src='http://openweathermap.org/img/wn/".$temperature_current_weather_icon2."@2x.png' />"
+?>
+
+
+
+<?php
 $city_name1='Aktau';
 $api_key1='5757b2dd818d33ce0b08cc1d138b1f5a';
 $api_url1='https://api.openweathermap.org/data/2.5/weather?q='.$city_name1.'&appid='.$api_key1;
