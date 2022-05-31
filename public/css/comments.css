@@ -66,6 +66,10 @@ form::-webkit-scrollbar {
   align-items: center;
   margin-top: 20px;
 }
+.area{
+    display: flex;
+
+}
 
 .comment-block-img {
   height: 60%;

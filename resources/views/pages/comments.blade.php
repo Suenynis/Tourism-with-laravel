@@ -27,13 +27,13 @@
             <div class = " collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active lang" aria-current="page" href="tours.blade.php" key="tour">    Все туры</a>
+                        <a class="nav-link active lang" aria-current="page" href="tours" key="tour">    Все туры</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="comments.blade.php" key="feedback">Отзывы</a>
+                        <a class="nav-link lang" href="comments" key="feedback">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="login.blade.php" key="signin">Войти</a>
+                        <a class="nav-link lang" href="login" key="signin">Войти</a>
                     </li>
 
                     <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
@@ -71,8 +71,14 @@
             </div>
             <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
             <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate">RUS</button></li>
+                <div class="area">
+                <textarea name="comment" cols="70" rows="3"></textarea></p>
+                 <p><input type="submit" value="Отправить">
+                <input type="reset" value="Очистить"></p>
+                </div>
         </form>
     </div>
+
 
 
 </div>
