@@ -34,6 +34,5 @@ Route::group(['middleware' => ['role:admin']], function () {
         return view('pages.adminMain');
     })->name('test');
 });
-
-
+Route::post('/user_comments',[CustomAuthController::class,'registerUser'])->name('comment');
 
