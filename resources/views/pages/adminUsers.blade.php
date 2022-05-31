@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link white-text active" aria-current="page" href="admin_Tours">Control tours</a>
+                    <a class="nav-link white-text active" aria-current="page" href="{{route('admin.index')}}">Control tours</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link white-text" href="admin_Users">Users</a>
@@ -60,6 +60,9 @@
                 <td><div class = "btn reject-box">Reject</div></td>
               </tr>
         @endforeach
+        <tr>
+            <th scope="row">{{$users[intval('0')]['name']}}</th>
+        </tr>
         </tbody>
     </table>
 

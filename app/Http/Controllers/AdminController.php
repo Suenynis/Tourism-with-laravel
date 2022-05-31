@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Models\Tour;
 
 class AdminController extends Controller
 {
@@ -14,7 +15,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //
+        $data = Tour::all();
+        return view('admin.index',['tours'=> $data]);
     }
 
     /**
@@ -24,7 +26,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create');
     }
 
     /**
@@ -35,7 +37,15 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $new_tour = new Tour();
+        $new_tour->name = $request->name;
+        $new_tour->picture = '';
+        $new_tour->Place = $request->Place;
+        $new_tour->Duration = $request->Duration;
+        $new_tour->Nutrition = $request->Nutrition;
+        $new_tour->Tourists = $request->Tourists;
+        $new_tour->save();
+        return redirect()->back()->withSuccess('Карточка туризма успешна создана');
     }
 
     /**

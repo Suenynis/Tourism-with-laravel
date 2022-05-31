@@ -4,22 +4,28 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateToursChoosenTable extends Migration
+class Tours extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
+
+        public function up()
     {
-        Schema::create('_tours__choosen', function (Blueprint $table) {
+        Schema::create('Tours', function (Blueprint $table) {
             $table->id();
-            $table->string('TourID');
-            $table->string('UserID');
+            $table->string('name');
+            $table->string('picture');
+            $table->string('Place');
+            $table->string('Duration');
+            $table->string('Nutrition');
+            $table->string('Tourists');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -28,6 +34,7 @@ class CreateToursChoosenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_tours__choosen');
+        Schema::dropIfExists('Tours');
+
     }
 }
