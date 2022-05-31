@@ -24,6 +24,7 @@ Route::get('/admin_Main','App\Http\Controllers\PagesController@adminMain');
 Route::get('/admin_Comments', 'App\Http\Controllers\PagesController@adminComments');
 Route::get('/admin_Tours','App\Http\Controllers\PagesController@adminEdit');
 Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex');
+Route::get('/user_Page','App\Http\Controllers\PagesController@userPage');
 Route::get('/admin_Users', 'App\Http\Controllers\PagesController@adminUsers');
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');

@@ -36,4 +36,7 @@ class PagesController extends Controller
     public function adminUsers(): string{
         return view('pages.adminUsers');
     }
+    public function userPage(): string{
+        return view('pages.userPage');
+    }
 }

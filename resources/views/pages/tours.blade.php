@@ -75,7 +75,23 @@
 
 
 ?>
+<?php
+$city_name1='Aktau';
+$api_key1='5757b2dd818d33ce0b08cc1d138b1f5a';
+$api_url1='https://api.openweathermap.org/data/2.5/weather?q='.$city_name1.'&appid='.$api_key1;
 
+$weather_data1=json_decode( file_get_contents($api_url1),true);
+
+$temperature1=$weather_data1['main']['temp'];
+$temperature_in_celsius1=round($temperature1-273.15);
+$temperature_current_weather1=$weather_data1['weather'][0]['main'];
+$temperature_current_weather_description1=$weather_data1['weather'][0]['description'];
+$temperature_current_weather_icon1=$weather_data1['weather'][0]['icon'];
+
+echo "The current temperature in Aktau is ". $temperature_in_celsius1. " Celsius.";
+
+echo "<img src='http://openweathermap.org/img/wn/".$temperature_current_weather_icon1."@2x.png' />"
+?>
 
 @endsection('content')
 
