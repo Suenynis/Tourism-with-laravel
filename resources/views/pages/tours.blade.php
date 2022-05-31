@@ -88,7 +88,7 @@ $temperature_current_weather2=$weather_data2['weather'][0]['main'];
 $temperature_current_weather_description2=$weather_data2['weather'][0]['description'];
 $temperature_current_weather_icon2=$weather_data2['weather'][0]['icon'];
 
-echo "The current temperature in Aktau is ". $temperature_in_celsius2. " Celsius.";
+echo "The current temperature in Turkistan is ". $temperature_in_celsius2. " Celsius.";
 
 echo "<img src='http://openweathermap.org/img/wn/".$temperature_current_weather_icon2."@2x.png' />"
 ?>
