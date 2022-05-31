@@ -27,13 +27,13 @@
             <div class = " collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active lang" aria-current="page" href="tours.html" key="tour">    Все туры</a>
+                        <a class="nav-link active lang" aria-current="page" href="tours.blade.php" key="tour">    Все туры</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="comments.html" key="feedback">Отзывы</a>
+                        <a class="nav-link lang" href="comments.blade.php" key="feedback">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="login.html" key="signin">Войти</a>
+                        <a class="nav-link lang" href="login.blade.php" key="signin">Войти</a>
                     </li>
 
                     <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>

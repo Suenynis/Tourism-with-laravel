@@ -1,0 +1,131 @@
+#ava{
+    position: absolute;
+    width: 344px;
+    height: 332px;
+    left: 385px;
+    top: 165px;
+}
+.warwy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 768px;
+    height: 72px;
+    left: 419px;
+    top: 531px;
+    background: #EAE9E9;
+}
+.letter{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left:0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+}
+.center-content{
+    position: absolute;
+}
+.rectangle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 187px;
+    height: 41px;
+    right: 0;
+    background: #00FF29;
+    border-radius: 50px;
+}
+.user-content{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 750px;
+}
+.jazu{
+    position: absolute;
+    width: 56px;
+    height: 20px;
+    left: 765px;
+    top: 165px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    color:black;
+    float: left;
+}
+.jazu1{
+    position: absolute;
+    width: 141px;
+    height: 20px;
+    left: 878px;
+    top: 164px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    float:left;
+}
+.jazu2{
+    position: absolute;
+    width: 78px;
+    height: 20px;
+    left: 764px;
+    top: 218px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+}
+.jazu3{
+    position: absolute;
+    width: 141px;
+    height: 20px;
+    left: 877px;
+    top: 217px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+}
+.jazu4{
+    position: absolute;
+    width: 89px;
+    height: 20px;
+    left: 765px;
+    top: 271px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+}
+.jazu5{
+    position: absolute;
+    width: 141px;
+    height: 20px;
+    left: 877px;
+    top: 272px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+}
