@@ -36,6 +36,7 @@
                         <a class="nav-link lang" href="login.html" key="signin">Войти</a>
                     </li>
 
+
                     <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
                     <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate">RUS</button></li>
                 </ul>

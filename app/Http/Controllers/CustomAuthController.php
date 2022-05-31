@@ -38,18 +38,21 @@ class CustomAuthController extends Controller
         else{
             return back()->with('fail','Something wrong');
         }
+
     }
     public function loginUser(Request $request){
         $request->validate([
             'email'=>'required|email',
             'password'=>'required|min:5|max:12'
         ]);
-
         $user = User::where('email' ,'=' ,$request->email)->first();
         if($user){
            if(Hash::check($request->password,$user ->password)){
                $request->session()->put('loginId', $user->id);
+
                //return view('pages.adminMain', compact('user'));
+               auth('web')->login($user);
+               redirect(route('home'));
                return view('pages.index',compact('user'));
            }
             return back()->with('fail','The password is not correct');
@@ -75,4 +78,5 @@ class CustomAuthController extends Controller
         return redirect('login');
 
     }
+
 }

@@ -40,272 +40,30 @@
 </div>
 <div class  = "edit-tours m-col">
     <h3 class="user-word">USERS</h3>
-    <div class="container-fluid mytable m-col">
-        <div class="col-3 mline row ">
-            <div class="col">
-                <a>First Name</a>
-            </div>
-            <div class="col">
-                <a>Last Name</a>
-            </div>
-            <div class="col">
-                <a>Email</a>
-            </div>
-            <div class="col">
-                <a>Phone Num</a>
-            </div>
-            <div class="col">
-                <a>Tour name</a>
-            </div>
-            <div class="col">
-            </div>
-            <div class="col">
-            </div>
-        </div>
-        <div class="col-3 line1 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+        @foreach($users as $user)
+              <tr>
+                <th scope="row">{{$user['id']}}</th>
+                <td>{{$user['name']}}</td>
+                <td>{{$user['phone']}}</td>
+                <td>{{$user['email']}}</td>
+                <td><div class = "btn accept-box">Accept</div></td>
+                <td><div class = "btn reject-box">Reject</div></td>
+              </tr>
+        @endforeach
+        </tbody>
+    </table>
 
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line2 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line1 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-
-        <div class="col-3 line2 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-
-        <div class="col-3 line1 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line2 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line1 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line2 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line1 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-        <div class="col-3 line2 row">
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example</a>
-            </div>
-            <div class="col">
-                <a>example@gmail.com</a>
-            </div>
-            <div class="col">
-                <a>8(777)7777777</a>
-            </div>
-            <div class="col">
-                <a>Burabai</a>
-            </div>
-            <div class="col">
-                <div class = "btn accept-box">Accept</div>
-            </div>
-            <div class="col">
-                <div class = "btn reject-box">Reject</div>
-            </div>
-        </div>
-
-
+    </div>
 
     </div>
 </div>
