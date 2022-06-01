@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Models\Tour;
 
 class AdminController extends Controller
 {
@@ -14,7 +15,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //
+        $data = Category::orderBy('created_at','desc')->get();
+        return view('admin.index',['tours'=> $data]);
     }
 
     /**
@@ -24,7 +26,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create');
     }
 
     /**
@@ -35,7 +37,15 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $new_tour = new Category();
+        $new_tour->name = $request->name;
+        $new_tour->picture = '1.png';
+        $new_tour->Place = $request->Place;
+        $new_tour->Duration = $request->Duration;
+        $new_tour->Nutrition = $request->Nutrition;
+        $new_tour->Tourists = $request->Tourists;
+        $new_tour->save();
+        return redirect()->back()->withSuccess('Карточка туризма успешна создана');
     }
 
     /**
@@ -57,7 +67,8 @@ class AdminController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+
+        return view('admin.edit',['tours' => $category ]);
     }
 
     /**
@@ -78,8 +89,11 @@ class AdminController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy(Request $category)
     {
-        //
+
+        Category::destroy(intval($category['id']));
+
+        return redirect()->back()->withSuccess('Карточка успешна удалена');
     }
 }

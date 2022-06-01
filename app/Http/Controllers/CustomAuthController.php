@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -78,5 +79,10 @@ class CustomAuthController extends Controller
         return redirect('login');
 
     }
+
+    public function deleteuser(Request  $user){
+        User::destroy(intval($user['id']));
+        return back()->with('success' ,'User deleted successfully');
+     }
 
 }

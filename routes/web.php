@@ -3,7 +3,7 @@
 use App\Http\Controllers\CustomAuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User_for_Admin_Controller;
-
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +32,13 @@ Route::get('/admin_Index','App\Http\Controllers\PagesController@adminIndex')->mi
 Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');
 Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
 Route::get('/logout', [CustomAuthController::class, 'logout']);
-Route::get('/admin_Users',[User_for_Admin_Controller::class, 'show'])->middleware('role:admin')->name('control-users');;
+Route::get('/admin_Users',[User_for_Admin_Controller::class, 'showUsers'])->middleware('role:admin')->name('control-users');
+Route::get('/admin_Users',[User_for_Admin_Controller::class, 'showTours'])->middleware('role:admin')->name('control-Tours');
+Route::middleware('role:admin')->prefix('test')->group(function (){
+    Route::get('/test',[User_for_Admin_Controller::class, 'check']);
+    Route::resource('admin',AdminController::class);
+});
+Route::post('/delete-user',[CustomAuthController::class,'deleteuser'])->name('delete-user');
+
 
 

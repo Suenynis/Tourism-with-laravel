@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link white-text active" aria-current="page" href="admin_Tours">Control tours</a>
+                    <a class="nav-link white-text active" aria-current="page" href="{{route('admin.index')}}">Control tours</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link white-text" href="admin_Users">Users</a>
@@ -51,15 +51,22 @@
         </thead>
         <tbody>
         @foreach($users as $user)
+            <form action="{{route('delete-user')}}" method="POST">
+                @csrf
               <tr>
-                <th scope="row">{{$user['id']}}</th>
-                <td>{{$user['name']}}</td>
-                <td>{{$user['phone']}}</td>
-                <td>{{$user['email']}}</td>
+                  <th name = "name">{{$user['id']}}</th>
+                  <td style="display: none"> <input  value="{{$user['id']}}" name = "id" scope="row"></td>
+                <td name = "name">{{$user['name']}}</td>
+                <td name = "phone">{{$user['phone']}}</td>
+                <td name = "email">{{$user['email']}}</td>
                 <td><div class = "btn accept-box">Accept</div></td>
-                <td><div class = "btn reject-box">Reject</div></td>
+                <td><button type="submit" class = "btn reject-box">Reject</button></td>
+                </form>
               </tr>
         @endforeach
+        <tr>
+            <th scope="row">{{$users[intval('0')]['name']}}</th>
+        </tr>
         </tbody>
     </table>
 
