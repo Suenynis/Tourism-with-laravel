@@ -34,6 +34,7 @@ Route::middleware('role:admin')->prefix('test')->group(function (){
     Route::get('/test',[User_for_Admin_Controller::class, 'check']);
     Route::resource('admin',AdminController::class);
 });
+Route::post('/delete-user',[CustomAuthController::class,'deleteuser'])->name('delete-user');
 
 
 

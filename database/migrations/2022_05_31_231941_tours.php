@@ -12,7 +12,7 @@ class Tours extends Migration
      * @return void
      */
 
-        public function up()
+    public function up()
     {
         Schema::create('Tours', function (Blueprint $table) {
             $table->id();

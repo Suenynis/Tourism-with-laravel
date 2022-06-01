@@ -39,17 +39,26 @@
     </div>
 
 </div>
+@if(Session::has('success'))
+    <div class="alert alert-success">{{Session::get('success')}}</div>
+@endif
 <div class="content-2">
     @foreach($tours as $tour)
     <div class="card" style="width: 18rem;">
         <img src="../img/{{$tour['picture']}}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title lang" key="Almaty"> {{$tour['name']}} </h5>
+            <form method="post" action="{{route('admin.destroy',$tour['id'])}}">
+                @csrf
+                @method('DELETE')
+                 <input style="display: none"  value="{{$tour['id']}}" name = "id" scope="row">
+                <h5 class="card-title lang" key="Almaty"> {{$tour['name']}} </h5>
             <p class="card-text lang" key="duration">Длительность: {{$tour['Duration']}}</p>
             <p class="card-text">{{$tour['Place']}}</p>
             <p class="card-text lang" key="nutrition"> Питание: {{$tour['Nutrition']}} </p>
             <p class="card-text lang" key="toursists">Туристы: {{$tour['Tourists']}}</p>
-            <a href="{{route('admin.create')}}" class="card-text btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="{{route('admin.edit',$tour['id'])}}" class="card-text btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <button type="submit" class="btn btn-danger delete-btn">Delete</button>
+            </form>
         </div>
     </div>
     @endforeach
@@ -61,7 +70,8 @@
             <p class="card-text">Garden View</p>
             <p class="card-text lang" kay="nutrition"> Питание: AI все включено </p>
             <p class="card-text lang" key="tourists">Туристы: 2 взрослых</p>
-            <a href="#" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="{{route('admin.create')}}" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <button type="submit" class="btn btn-danger delete-btn">Delete</button>
         </div>
     </div>
     <div class="card" style="width: 18rem;">

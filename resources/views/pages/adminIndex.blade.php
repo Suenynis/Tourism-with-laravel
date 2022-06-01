@@ -49,7 +49,7 @@
             <p class="card-text">{{$tour['Place']}}</p>
             <p class="card-text lang" key="nutrition"> Питание: {{$tour['Nutrition']}} </p>
             <p class="card-text lang" key="toursists">Туристы: {{$tour['Tourists']}}</p>
-            <a href="#" class="card-text btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="{{route('admin.create')}}" class="card-text btn btn-primary align-self-center lang" key="more about">EDIT</a>
         </div>
     </div>
     @endforeach
@@ -61,7 +61,7 @@
             <p class="card-text">Garden View</p>
             <p class="card-text lang" kay="nutrition"> Питание: AI все включено </p>
             <p class="card-text lang" key="tourists">Туристы: 2 взрослых</p>
-            <a href="#" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
+            <a href="{{route('admin.create')}}" class="btn btn-primary align-self-center lang" key="more about">EDIT</a>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
