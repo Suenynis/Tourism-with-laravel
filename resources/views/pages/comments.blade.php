@@ -27,25 +27,24 @@
             <div class = " collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class = "navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active lang" aria-current="page" href="tours.html" key="tour">    Все туры</a>
+                        <a class="nav-link active lang" aria-current="page" href="tours" key="tour">    Все туры</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="comments.html" key="feedback">Отзывы</a>
+                        <a class="nav-link lang" href="comments" key="feedback">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="login.html" key="signin">Войти</a>
+                        <a class="nav-link lang" href="login" key="signin">Войти</a>
                     </li>
 
 
-                    <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
-                    <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate">RUS</button></li>
+
                 </ul>
             </div>
 
         </div>
     </nav>
     <div class="comment-form">
-        <form>
+        <form method="post">
             <div class="comment-block">
                 <img class = "comment-block-img" src="img/person-comment.png" >
                 <div class="comment-text-box">
@@ -70,10 +69,17 @@
                     <a class = "comment-text lang" key="comment4">Всё отлично! Ответственные за свои дела. Пошли с хорошей компанией. Нам все понравилось!                </a>
                 </div>
             </div>
-            <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate">ENG</button></li>
-            <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate">RUS</button></li>
+            <
+            <li class="nav-item lang-en"><button id="en"  onclick="Functioneng_rus()"  style = "display:block" class="nav-link translate"></button></li>
+            <li class="nav-item lang-ru"><button id="ru"  onclick="Functioneng_rus()"  style = "display:none" class="nav-link translate"></button></li>
+                <div class="area">
+                <textarea name="comment" cols="70" rows="3"></textarea></p>
+                 <p><input type="submit" value="Отправить">
+                <input type="reset" value="Очистить"></p>
+                </div>
         </form>
     </div>
+
 
 
 </div>
